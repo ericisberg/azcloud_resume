@@ -21,8 +21,8 @@ namespace Company.Function
         [FunctionName("GetResumeCounter")]
         public static HttpResponseMessage Run(
             [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)] HttpRequest req,
-            [CosmosDB(databaseName:"azcloudresdbnosql", collectionName:"cosmosnosqldbCounter", ConnectionStringSetting = "azcloudresdbConnectionString",Id = "1", PartitionKey = "1")] Counter counter,
-            [CosmosDB(databaseName:"azcloudresdbnosql", collectionName:"cosmosnosqldbCounter", ConnectionStringSetting = "azcloudresdbConnectionString",Id = "1", PartitionKey = "1")] out Counter updatedCounter,
+            [CosmosDB(databaseName:"azcloudresdbnosql", collectionName:"cosmosnosqldbCounter", ConnectionStringSetting = "azcloudrescosmosdbConnectionString",Id = "1", PartitionKey = "1")] Counter counter,
+            [CosmosDB(databaseName:"azcloudresdbnosql", collectionName:"cosmosnosqldbCounter", ConnectionStringSetting = "azcloudrescosmosdbConnectionString",Id = "1", PartitionKey = "1")] out Counter updatedCounter,
             ILogger log)
         {
             log.LogInformation("C# HTTP trigger function processed a request.");
