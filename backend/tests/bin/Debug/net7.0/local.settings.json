@@ -1,0 +1,13 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+    "azcloudrescosmosdbConnectionString": "AccountEndpoint=https://azcloudrescosmosdb.documents.azure.com:443/;AccountKey=WWj4WsexftWinTqGUdK5FKmMK7Uj2GXwCysWKNCXGllig1jyRbVAtmqZ6ae7R9tz7L1JonvpQ0ukACDbPk5ERA==;"
+  },
+  "Host":
+  {
+    "CORS": "*"
+  }
+
+}
