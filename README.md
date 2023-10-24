@@ -6,7 +6,7 @@ Welcome to my solution for the Cloud Resume Challenge (Azure Flavor)! This proje
 Experience the solution in action. [View the live demo here](https://www.ericisberg.cloud/).
 
 ## **Architecture Diagram**
-To get an overview of how everything comes together, see the [diagram here](#).
+To get an overview of how everything comes together, see the [diagram here](https://github.com/ericisberg/azcloud_resume/blob/main/image/diagram.png). Provided by Gwyn Peña-Siguenza via [ACG Projects](https://www.youtube.com/watch?v=ieYrBWmkfno)
 
 ## **Prerequisites**
 Before you dive into the code, ensure you have the following tools and accounts set up:
@@ -16,6 +16,7 @@ Before you dive into the code, ensure you have the following tools and accounts 
 - Azure CLI
 - .NET 6 LTS
 - Azure Functions Core Tools
+- Custom domain (To host static website) I used [namecheap](https://www.namecheap.com/)
 - Visual Studio Code
 
 ### **Visual Code Extensions**
@@ -55,3 +56,9 @@ Continuous Integration and Continuous Deployment (CI/CD) streamline the developm
 - **Blob Storage with GitHub Actions**: Automate the deployment of a static site on blob storage using [GitHub actions](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-static-site-github-actions?tabs=userlevel).
 - **Azure Function Deployment**: Effortlessly [deploy Azure Functions to Azure with GitHub Actions](https://github.com/marketplace/actions/azure-functions-action).
 - **.NET Testing in GitHub Actions**: Incorporate .NET testing in your GitHub workflow. [Here's how](https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net).
+
+---
+
+## 🌟 Special Thanks
+
+Huge shoutout to **Gwyn Peña-Siguenza** for the detailed walkthrough guide. If you're interested in building a similar project, check out [ACG Projects: Build Your Resume on Azure with Blob Storage, Functions, CosmosDB, and GitHub Actions](https://www.youtube.com/watch?v=ieYrBWmkfno) on YouTube. It provided invaluable insights and made this project possible.
