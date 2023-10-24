@@ -1,6 +1,6 @@
-# **CloudResumeChallenge: Your Resume in Azure**
+# **Cloud Resume Challenge: Your Resume in Azure**
 
-Welcome to my solution for the Azure Resume Challenge! This project aims to showcase a resume in Azure using a combination of front-end and back-end resources, with an integrated visitor counter powered by Azure Functions.
+Welcome to my solution for the Cloud Resume Challenge (Azure Flavor)! This project aims to showcase a resume in Azure using a combination of front-end and back-end resources, with an integrated visitor counter powered by Azure Functions.
 
 ## **Live Demo**
 Experience the solution in action. [View the live demo here](https://www.ericisberg.cloud/).
@@ -34,24 +34,24 @@ The front-end of this project is crafted using a static site paradigm with HTML,
 ## **Back-end Resources**
 The backbone of this project is an HTTP-triggered Azure Function integrated with Cosmos DB. When the function gets triggered, it fetches data from CosmosDB, increments the counter, saves the updated data, and then sends the updated value back to the caller.
 
-- **Cosmos DB Setup**: Set up a Cosmos DB account either through the [command line](https://learn.microsoft.com/en-us/azure/cosmos-db/table/how-to-create-account?tabs=azure-cli) or the [Azure portal](https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/quickstart-portal).
-- **Azure Function Creation**: [Here's a guide](#) to creating an HTTP-triggered Azure Function in Visual Studio Code.
+- **Cosmos DB Setup**: Set up a Cosmos DB account either through the [Azure command line](https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/manage-with-cli) or the [Azure portal](https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/quickstart-portal).
+- **Azure Function Creation**: [Here's a guide](https://learn.microsoft.com/en-us/azure/azure-functions/functions-develop-vs-code?tabs=node-v3%2Cpython-v2%2Cisolated-process&pivots=programming-language-csharp) to creating an HTTP-triggered Azure Function in Visual Studio Code.
 - **Azure Functions with Cosmos DB**: Delve into the intricacies of integrating Azure Functions with Cosmos DB through these resources:
-  - [Azure Functions Cosmos DB bindings](#)
-  - [Fetching data from Cosmos DB](#)
-  - [Writing data to Cosmos DB](#)
-- **CORS Setup**: To ensure smooth communication between the website and the function, CORS needs to be enabled both [locally](#) and on the [deployed Azure Function](#).
+  - [Azure Functions Cosmos DB bindings](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-cosmosdb-v2?tabs=isolated-process%2Cextensionv4&pivots=programming-language-csharp)
+  - [Fetching data from Cosmos DB](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-cosmosdb-v2-input?tabs=python-v2%2Cisolated-process%2Cnodejs-v4%2Cextensionv4&pivots=programming-language-csharp)
+  - [Writing data to Cosmos DB](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-cosmosdb-v2-output?tabs=python-v2%2Cisolated-process%2Cnodejs-v4%2Cextensionv4&pivots=programming-language-csharp)
+- **CORS Setup**: To ensure smooth communication between the website and the function, CORS needs to be enabled both [locally](https://learn.microsoft.com/en-us/azure/azure-functions/functions-develop-local) and on the [deployed Azure Function](https://learn.microsoft.com/en-us/azure/azure-functions/functions-how-to-use-azure-function-app-settings?tabs=portal#cors).
 
 ## **Testing Resources**
 Testing is a cornerstone of every robust application. Though my tests are basic, they play a vital role in ensuring the functionality of the project.
 
-- **Introduction to xUnit.net**: [Get started with xUnit.net](#) for testing.
-- **xUnit with Azure Functions**: Learn [how to set up xUnit with Azure Functions](#).
-- **Testing Azure Functions**: Deep dive into [testing methodologies for Azure Functions](#).
+- **Introduction to xUnit.net**: [Get started with xUnit.net](https://xunit.net/docs/getting-started/netcore/cmdline) for testing.
+- **xUnit with Azure Functions**: Learn [how to set up xUnit with Azure Functions](https://www.madebygps.com/how-to-use-xunit-with-azure-functions/).
+- **Testing Azure Functions**: Deep dive into [testing methodologies for Azure Functions](https://learn.microsoft.com/en-us/samples/azure-samples/azure-functions-tests/azure-functions-tests/).
 
 ## **CI/CD Resources**
 Continuous Integration and Continuous Deployment (CI/CD) streamline the development process, ensuring every commit is tested and ready for production.
 
-- **Blob Storage with GitHub Actions**: Automate the deployment of a static site on blob storage using [GitHub actions](#).
-- **Azure Function Deployment**: Effortlessly [deploy Azure Functions to Azure with GitHub Actions](#).
-- **.NET Testing in GitHub Actions**: Incorporate .NET testing in your GitHub workflow. [Here's how](#).
+- **Blob Storage with GitHub Actions**: Automate the deployment of a static site on blob storage using [GitHub actions](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-static-site-github-actions?tabs=userlevel).
+- **Azure Function Deployment**: Effortlessly [deploy Azure Functions to Azure with GitHub Actions](https://github.com/marketplace/actions/azure-functions-action).
+- **.NET Testing in GitHub Actions**: Incorporate .NET testing in your GitHub workflow. [Here's how](https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net).
